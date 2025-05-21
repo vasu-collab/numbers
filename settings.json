@@ -1,3 +1,5 @@
-"python.linting.enabled": true,
-"ruff.enable": true,
-"ruff.args": ["--fix"]
+{
+    "python.linting.enabled": true,
+    "ruff.enable": true,
+    "ruff.args": ["--fix"]
+}
