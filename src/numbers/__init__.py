@@ -3,4 +3,3 @@
 def hello() -> str:
     """Return a greeting from the numbers package."""
     return "Hello from numbers!"
-

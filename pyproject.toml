@@ -16,15 +16,13 @@ dev = [
 ]
 
 [tool.ruff]
-# Set the maximum line length to 79.
-line-length = 79
+line-length = 88
+target-version = "py311"  # Or your actual Python version
 
 [tool.ruff.lint]
-# Add the `line-too-long` rule to the enforced rule set.
-extend-select = [
-  "UP",  # pyupgrade
-  "D",   # pydocstyle
-]
+select = ["E", "F", "D"]  # Errors, Pyflakes, Docstring rules
+ignore = ["D100", "D104"]  # Optional: ignore specific warnings
 
 [tool.ruff.lint.pydocstyle]
-convention = "google"
+convention = "google"  # Or "numpy", "pep257"
+
